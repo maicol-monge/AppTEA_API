@@ -11,7 +11,7 @@ class Especialista extends Model
 
     protected $table = 'especialista';
     protected $primaryKey = 'id_especialista';
-    public $timestamps = true;
+    public $timestamps = false; // La tabla no tiene created_at/updated_at
 
     protected $fillable = [
         'id_usuario',

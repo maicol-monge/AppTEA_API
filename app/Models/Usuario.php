@@ -11,7 +11,7 @@ class Usuario extends Model
 
     protected $table = 'usuario';
     protected $primaryKey = 'id_usuario';
-    public $timestamps = true;
+    public $timestamps = false; // La tabla no tiene created_at/updated_at
 
     protected $fillable = [
         'nombres',

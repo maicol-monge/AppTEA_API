@@ -11,7 +11,7 @@ class Paciente extends Model
 
     protected $table = 'paciente';
     protected $primaryKey = 'id_paciente';
-    public $timestamps = true;
+    public $timestamps = false; // La tabla no tiene created_at/updated_at
 
     protected $fillable = [
         'id_usuario',

@@ -11,6 +11,7 @@ class ApiToken extends Model
 
     protected $table = 'api_tokens';
     protected $fillable = ['id_usuario', 'token', 'expires_at'];
+    public $timestamps = false; // evitar columnas created_at/updated_at
 
     protected $dates = ['expires_at'];
 
